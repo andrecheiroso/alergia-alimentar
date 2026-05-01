@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alergia Alimentar</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    header{
+      background: #1a4d7a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1{
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p{
+      margin: 5px 0 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    nav{
+      background: #143b5c;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      gap: 15px;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    nav a:hover{
+      background: rgba(255,255,255,0.2);
+    }
+
+    main{
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card{
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2{
+      color: #1a4d7a;
+      margin-top: 0;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    ul{
+      padding-left: 20px;
+    }
+
+    footer{
+      background: #1a4d7a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    footer p{
+      margin: 0;
+      font-size: 14px;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Alergia Alimentar</h1>
+    <p>Informações principais: causas, sintomas, consequências e manejo</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#causas">Causas</a></li>
+      <li><a href="#sintomas">Sintomas</a></li>
+      <li><a href="#consequencias">Consequências</a></li>
+      <li><a href="#condutas">Condutas</a></li>
+      <li><a href="#referencias">Referências</a></li>
+      <li><a href="#contato">Créditos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="causas" class="card" aria-labelledby="titulo-causas">
+      <h2 id="titulo-causas">Causas</h2>
+
+      <div class="grid">
+        <div>
+          <h3>Fatores imunológicos</h3>
+          <p>
+            A alergia alimentar pode ser mediada por IgE ou por mecanismos celulares.
+            O sistema imunológico identifica proteínas alimentares como ameaças e desencadeia uma resposta exagerada.
+          </p>
+        </div>
+
+        <div>
+          <h3>Alérgenos comuns</h3>
+          <ul>
+            <li>Leite</li>
+            <li>Ovo</li>
+            <li>Amendoim</li>
+            <li>Nozes</li>
+            <li>Peixe e crustáceos</li>
+            <li>Soja e trigo</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Fatores de risco</h3>
+          <ul>
+            <li>História familiar de alergia</li>
+            <li>Asma ou dermatite atópica</li>
+            <li>Introdução alimentar precoce ou tardia em alguns casos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="sintomas" class="card" aria-labelledby="titulo-sintomas">
+      <h2 id="titulo-sintomas">Sintomas</h2>
+      <ul>
+        <li><strong>Cutâneos:</strong> urticária, angioedema, coceira</li>
+        <li><strong>Gastrointestinais:</strong> dor abdominal, vômito, diarreia</li>
+        <li><strong>Respiratórios:</strong> chiado, tosse, falta de ar</li>
+        <li><strong>Sistêmicos:</strong> tontura, síncope, anafilaxia</li>
+        <li>Sintomas podem aparecer de minutos a poucas horas após a ingestão</li>
+      </ul>
+    </section>
+
+
+    <section id="consequencias" class="card" aria-labelledby="titulo-consequencias">
+      <h2 id="titulo-consequencias">Consequências</h2>
+      <p>
+        Além do impacto fisiológico imediato (ex.: risco de anafilaxia), alergias alimentares afetam
+        a qualidade de vida, nutrição (restrições alimentares), relações sociais e podem gerar custos médicos.
+        Muitas vezes também exigem adaptações escolares e ocupacionais.
+      </p>
+    </section>
+
+
+    <section id="condutas" class="card" aria-labelledby="titulo-condutas">
+      <h2 id="titulo-condutas">Condutas e manejo</h2>
+
+      <div class="grid">
+        <div>
+          <h3>Diagnóstico</h3>
+          <ul>
+            <li>Anamnese detalhada</li>
+            <li>Testes cutâneos (prick test)</li>
+            <li>Dosagem de IgE específica</li>
+            <li>Teste de provocação oral controlado (padrão-ouro)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Tratamento agudo</h3>
+          <ul>
+            <li><strong>Adrenalina intramuscular imediata</strong> em casos de anafilaxia</li>
+            <li>Antihistamínicos conforme indicação médica</li>
+            <li>Corticosteroides como suporte em alguns casos</li>
+            <li>Suporte de via aérea e encaminhamento para emergência</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Prevenção e cuidado contínuo</h3>
+          <ul>
+            <li>Evitar o alérgeno (leitura de rótulos e risco de contaminação cruzada)</li>
+            <li>Plano de ação por escrito (escola, trabalho e família)</li>
+            <li>Treinamento para uso de autoinjetor de adrenalina (quando disponível)</li>
+            <li>Acompanhamento com alergologista e nutricionista</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="referencias" class="card" aria-labelledby="titulo-referencias">
+      <h2 id="titulo-referencias">Referências</h2>
+      <p>
+        Sugestões de fontes confiáveis:
+      </p>
+      <ul>
+        <li>Sociedade Brasileira de Alergia e Imunologia (ASBAI)</li>
+        <li>World Allergy Organization (WAO)</li>
+        <li>Artigos científicos revisados por pares (PubMed, SciELO)</li>
+      </ul>
+    </section>
+
+
+    <section id="contato" class="card" aria-labelledby="titulo-contato">
+      <h2 id="titulo-contato">Créditos / Contato</h2>
+      <p><strong>Aluno:</strong> [Seu nome]</p>
+      <p><strong>Disciplina:</strong> [Nome da disciplina]</p>
+      <p><strong>Professor:</strong> [Nome do professor]</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Site educativo sobre alergia alimentar — Trabalho acadêmico</p>
+  </footer>
+
+</body>
+</html>
